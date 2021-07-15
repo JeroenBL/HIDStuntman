@@ -1,8 +1,20 @@
 # HIDStuntman
 
-![image](https://raw.githubusercontent.com/JeroenBl/PSStuntman/main/assets/logo.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/JeroenBl/PSStuntman/main/assets/logo.png">
+</p>
 
-This is a very simple source connector for HelloID. 
+## Table of contents
+
+- [Introduction](#Introduction)
+- [Prerequisites](#Prerequisites)
+- [Installation](#Installation)
+- [Contributing](#Contributing)
+- [HelloID Docs](#HelloIDDocs)
+
+## Introduction
+
+The _HIDStuntman_ is a source connector for HelloID. You can use this connector to import stuntman created with the _PSStuntman_ module into HelloID to develop/test target connectors.
 
 ## Prerequisites
 
@@ -14,26 +26,27 @@ This is a very simple source connector for HelloID.
 
 1. Download all files from this repository
 
-2. Add a new source connector in HelloID
+2. Make sure to configure the __Primary Manager__ in HelloID to: __From department of primary contract__.
 
-3. Import the required files
+3. Add a new source connector in HelloID
 
-4. Fill in the required parameters. For an overview of all parameters, refer to the table below
+4. Import the required files
+
+5. Fill in the required parameters. For an overview of all parameters, refer to the table below
 
    | _Parameter_                | _Description_                                                | Mandatory |
    | -------------------------- | ------------------------------------------------------------ | --------- |
-   | PSStuntman module location | The path to the location where the PSStuntman dll files are saved | yes       |
-   | _Amount_                   | _The amount of stuntman you want to create, e.g. 10_         | no        |
-   | _CompanyName_              | _The CompanyName. e.g. 'Contoso'. When left empty, a random CompanyName will be picked_ | no        |
-   | _DomainName_               | _The DomainName. e.g. 'contoso.com'. The default DomainName is set to 'enyoi'_ | no        |
-   | _DomainSuffix_             | _The DomainSuffix e.g. 'com'_                                | no        |
-   | _Locale_                   | _The locale for the stuntman e.g. 'fr' (for French) or 'en' (for English). The default locale is set to 'nl'. To find more locales: https://github.com/bchavez/Bogus_ | no        |
-   | _SaveToSqlite_             | _Saves the generated Stuntman to a SQlite database. You will find it in root folder from where this module is loaded_ | no        |
+   | PSStuntman module location | The path to the location where the PSStuntman dll files are saved | yes |
 
-5. Make sure to toggle the switch 'Execute on-premises' before importing the data
+6. Make sure to toggle the switch 'Execute on-premises' before importing the data
 
-6. Import and have fun!
+7. Import and have fun!
 
+> The _mappings.json_ contains both the person and contract mapping. You will have to import this file twice for both the person and contract mapping in HelloID.
 ## Contributing
 
 Find a bug or have an idea! Open an issue or submit a pull request!
+
+## HelloID Docs
+
+The official HelloID documentation can be found at: https://docs.helloid.com/
