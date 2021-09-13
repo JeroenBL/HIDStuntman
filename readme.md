@@ -1,7 +1,7 @@
 # HIDStuntman
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JeroenBl/PSStuntman/main/assets/logo.png">
+  <img src="https://raw.githubusercontent.com/JeroenBl/Stuntman/main/assets/logo.png">
 </p>
 
 ## Table of contents
@@ -20,7 +20,7 @@ The _HIDStuntman_ is a source connector for HelloID. You can use this connector 
 
 - [ ] Windows PowerShell 5.1 installed on the server  where the HelloID agent / provisioning agent are running
 - [ ] .NET 4.8 is installed [Download .NET Framework 4.7.2 | Free official downloads (microsoft.com)](https://dotnet.microsoft.com/download/dotnet-framework/net472)
-- [ ] The PowerShell module 'PSStuntman' is required for this connector. https://github.com/JeroenBl/PSStuntman
+- [ ] The PowerShell module 'PSStuntman' is required for this connector. https://github.com/JeroenBl/Stuntman
 
 ## Installation
 
@@ -43,6 +43,7 @@ The _HIDStuntman_ is a source connector for HelloID. You can use this connector 
 7. Import and have fun!
 
 > The _mappings.json_ contains both the person and contract mapping. You will have to import this file twice for both the person and contract mapping in HelloID.
+
 ## Contributing
 
 Find a bug or have an idea! Open an issue or submit a pull request!

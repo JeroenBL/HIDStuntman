@@ -1,12 +1,12 @@
 #####################################################
 # HelloID-Conn-Prov-Source-PSStuntman-Departments
 #
-# Version: 2.0.0
+# Version: 2.0.1
 #####################################################
 $VerbosePreference = "Continue"
 
 #region functions
-function Get-StuntmanDepartments {
+function Get-STDepartments {
     [CmdletBinding()]
     param (
         [Parameter(Mandatory)]
@@ -29,4 +29,4 @@ $connectionSettings = ConvertFrom-Json $configuration
 $splatParams = @{
     LocationToPSStuntmanDLL = $connectionSettings.LocationToPSStuntmanDLL
 }
-Get-StuntmanDepartments @splatParams
+Get-STDepartments @splatParams
